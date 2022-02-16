@@ -1,0 +1,61 @@
+.homeContainer{
+    flex: 5.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeWrapper{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    background-color: #111827;
+    color: rgb(216, 202, 202);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.home-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.home-top .title{
+    font-size: 40px;
+}
+
+.home-center{
+    font-size: 22px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.bottomList{
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+    color: #4376db;
+}
+
+.bottomList .logo-item{
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:760px){
+    .homeWrapper{
+        padding: 5px 5px;
+    }
+
+    .home-top .title{
+        font-size: 25px;
+    }
+}

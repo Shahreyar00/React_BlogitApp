@@ -1,0 +1,151 @@
+.sidebarCont{
+    flex: 1;
+    height: calc(100vh - 50px);
+    background-color: #26375a;
+    color: white;
+    position: sticky;
+    top: 50px;
+}
+
+.sidebarTop,
+.sidebarCenter,
+.sidebarBottom{
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4b4b4b;
+}
+
+.sidebarTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.brand{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+}
+
+.sidebarCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list{
+    list-style: none;
+    width: 90%;
+}
+
+.list-item{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.list-item-icon{
+    width: 30px;
+    font-size: 16px;
+}
+
+.list-item-text{
+    font-size: 18px;
+    padding-left: 2px;   
+}
+
+.list-item:hover,
+.list-item.active{
+    background-color: #5a6475;
+    color: white;
+}
+
+.sidebarBottom{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login{
+    padding: 5px 25px;
+    background-color: rgb(99, 206, 99);
+    color: white;
+}
+
+.login:hover{
+    background-color: rgb(44, 212, 44);
+}
+
+.logout{
+    padding: 5px 21px;
+    background-color: rgb(209, 65, 65);
+    color: white;
+}
+
+.logout:hover{
+    background-color: rgb(218, 38, 38);
+}
+
+@media only screen and (max-width:760px){
+    .sidebarCont{
+        flex: 0.5;
+    }
+
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logout{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .brand,
+    .list-item-text{
+        display: none;
+    }
+
+    .list-item-icon{
+        padding-left: 0px;
+        width: 18px;
+    }
+
+    .sidebarBottom span{
+        display: none;
+    }
+
+    .sidebarBottom button{
+        width: 20px;
+        height: 20px;
+        padding: 0px 0px;
+    }
+}
+
+
+
+
+

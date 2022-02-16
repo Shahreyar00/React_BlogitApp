@@ -1,0 +1,98 @@
+.createCont{
+    flex: 5.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpContainer{
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    background-color: #111827;
+    color: rgb(216, 202, 202);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cpContainer h1{
+    text-align: center;
+}
+
+.cpContainer label{
+    font-size: 25px;
+}
+
+.cpContainer .inputGp{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGp input,
+.inputGp textarea {
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    background-color: #374151;
+    color: white;
+}
+
+.inputGp input {
+    height: 40px;
+    margin-top: 5px;
+}
+
+.inputGp input:focus,
+.inputGp textarea:focus{
+    outline: none;
+}
+.inputGp textarea {
+    height: 180px;
+    resize: none;
+    margin-top: 5px;
+}
+
+.submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpContainer button {   
+    width: 140px;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b5b8bd;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+
+.cpContainer button:hover{
+    background-color: rgb(78, 145, 78);
+    color: white;
+}
+
+@media only screen and (max-width:760px){
+    .cpContainer{
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        background-color: #111827;
+        color: wheat;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,98 @@
+.notesCont{
+    flex: 5.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.notesWrapper{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.notes-title{
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+.notesHeader{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    background-color: #111827;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.notes-search-icon{
+    font-size: 22px;
+    background-color: #111827;
+    color: white;
+    margin-right: 15px;
+}
+
+.notesHeader input{
+    width: 80%;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    background-color: #111827;
+    color: white;
+}
+
+.notesHeader input:focus{
+    outline: none;
+}
+
+.notesDisplay{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.note{
+    background-color: #111827;
+    color: white;
+    border-radius: 10px;
+	padding: 10px;
+	height: 200px;
+    width: 200px;
+    margin: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note-footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.notes-delete-icon {
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.notes-delete-icon:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width:760px){
+    .notes-title{
+        font-size: 8px;
+        margin-bottom: 2px;
+    }
+}
