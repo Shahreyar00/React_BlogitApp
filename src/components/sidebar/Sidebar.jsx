@@ -1,7 +1,7 @@
 import React from 'react';
 import "./sidebar.css";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaBloggerB, FaBtc, FaBuffer, FaEyeSlash, FaHamburger, FaHome, FaPaperclip, FaPen, FaPenFancy, FaSketch, FaStackExchange } from "react-icons/fa";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase-config';
 import { AiOutlineEye } from "react-icons/ai";
@@ -27,36 +27,62 @@ const Sidebar = ({ isAuth, setIsAuth }) => {
                 </div>
                 <div className="sidebarCenter">
                     <ul className="list">
-                        <Link className="link" to="/">
+                        <NavLink 
+                            to="/"
+                            // className="link" 
+                            className={({isActive})=>
+                                isActive?"active":" "
+                            }
+                        >
                             <li className="list-item">
                                 <FaHome className="list-item-icon" />
                                 <span className="list-item-text">Home</span>
                             </li>
-                        </Link>
-                        <Link className="link" to="/blogs">
-                        <li className="list-item">
-                            <FaBuffer className="list-item-icon" />
-                            <span className="list-item-text">Blogs</span>
-                        </li>
-                        </Link>
-                        <Link className="link" to="/createblog">
+                        </NavLink>
+                        <NavLink 
+                            to="/blogs"
+                            className={({isActive})=>
+                                isActive?"active":" "
+                            }
+                        >
+                            <li className="list-item">
+                                <FaBuffer className="list-item-icon" />
+                                <span className="list-item-text">Blogs</span>
+                            </li>
+                        </NavLink>
+                        <NavLink 
+                            to="/createblog"
+                            className={({isActive})=>
+                                isActive?"active":" "
+                            }
+                        >
                             <li className="list-item">
                                 <FaPen className="list-item-icon" />
                                 <span className="list-item-text">Create Blog</span>
                             </li>
-                        </Link>
-                        <Link className="link" to="/coin">
+                        </NavLink>
+                        <NavLink 
+                            to="/coin"
+                            className={({isActive})=>
+                                isActive?"active":" "
+                            }
+                        >
                             <li className="list-item">
                                 <FaBtc className="list-item-icon" />
                                 <span className="list-item-text">Crypto Prices</span>
                             </li>
-                        </Link>
-                        <Link className="link" to="/notes">
+                        </NavLink>
+                        <NavLink 
+                            to="/notes"
+                            className={({isActive})=>
+                                isActive?"active":" "
+                            }
+                        >
                             <li className="list-item">
                                 <FaPaperclip className="list-item-icon" />
                                 <span className="list-item-text">Notes</span>
                             </li>
-                        </Link>
+                        </NavLink>
                     </ul>
                 </div>
                 <div className="sidebarBottom">

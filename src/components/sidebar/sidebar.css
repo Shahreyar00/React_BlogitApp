@@ -66,11 +66,18 @@
     padding-left: 2px;   
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
 .list-item:hover,
-.list-item.active{
+.active .list-item{
     background-color: #5a6475;
     color: white;
 }
+
 
 .sidebarBottom{
     display: flex;
